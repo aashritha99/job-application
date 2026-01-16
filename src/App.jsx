@@ -36,7 +36,10 @@ function App() {
   };
 
   return (
+
     <div className="App">
+      <link className="logo" rel="icon" href="public\logo.jpg" />
+
      <Landing />
 
     <div className="container">

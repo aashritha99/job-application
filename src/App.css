@@ -54,3 +54,6 @@ button {
 button:hover {
   background: #4338ca;
 }
+.logo{
+  height: 40px;
+}
