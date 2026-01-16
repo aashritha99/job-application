@@ -20,7 +20,7 @@ function App() {
     e.preventDefault();
 
     try {
-      await fetch("http://localhost:5000/api/leads", {
+      await fetch(import.meta.env.VITE_API_URL + "/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
