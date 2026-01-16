@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Landing from "./components/landing";
 
+
 function App() {
   const [formData, setFormData] = useState({
     name: "",
@@ -38,7 +39,7 @@ function App() {
   return (
 
     <div className="App">
-      <link className="logo" rel="icon" href="public\logo.jpg" />
+      <link  src="public\logo.jpg" className="logo" rel="icon" />
 
      <Landing />
 
