@@ -54,3 +54,39 @@ button {
 button:hover {
   background: #4338ca;
 }
+
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+    text-align: left; 
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  input {
+    width: 100%;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+

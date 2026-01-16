@@ -37,12 +37,11 @@
 }
 
 .features-list {
-    height:200px;
+    height:auto;
   max-width: 900px;
   margin: 0 auto;
   list-style: none;
-  padding-top:10px;
-  padding-left: 20px;
+  padding:12px;
   background-color: rgb(139, 205, 184);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -53,7 +52,7 @@
   line-height: 1.5;
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
   .landing-header {
     flex-direction: column;
