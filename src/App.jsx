@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./App.css";
+import Landing from "./components/landing";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -15,54 +17,61 @@ function App() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // 🔴 MUST BE HERE
+    e.preventDefault();
 
-    console.log("🚀 SENDING:", formData);
+    try {
+      await fetch("http://localhost:5000/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    await fetch("http://localhost:5000/api/leads", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    alert("Submitted");
+      alert("Thanks! We’ll contact you soon.");
+      setFormData({ name: "", email: "", phone: "" }); // clear form
+    } catch (error) {
+      console.error("Error submitting form", error);
+    }
   };
 
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Test Form</h1>
+    <div className="App">
+     <Landing />
 
-      {/* 🔴 THIS IS CRITICAL */}
+    <div className="container">
+      <h1>Apply Now</h1>
+      <p className="subtitle">Leave your details and we’ll get in touch</p>
+
       <form onSubmit={handleSubmit}>
         <input
           name="name"
           placeholder="Name"
           value={formData.name}
           onChange={handleChange}
+          required
         />
-        <br />
 
         <input
           name="email"
+          type="email"
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
+          required
         />
-        <br />
 
         <input
           name="phone"
           placeholder="Phone"
           value={formData.phone}
           onChange={handleChange}
+          required
         />
-        <br />
-
-        <button type="submit">Submit</button>
+        <button type="submit">Get Started</button>
       </form>
     </div>
+   </div> 
   );
 }
 
