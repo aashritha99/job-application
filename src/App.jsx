@@ -47,7 +47,7 @@ function App() {
       <h1>Apply Now</h1>
       <p className="subtitle">Leave your details and we’ll get in touch</p>
 
-      <form onSubmit={handleSubmit}>
+      <form id="apply-form" onSubmit={handleSubmit}>
         <input
           name="name"
           placeholder="Name"
