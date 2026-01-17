@@ -1,28 +1,60 @@
 .landing {
   padding: 80px 20px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
 }
 
 .landing-header {
   max-width: 1100px;
-  margin: 0 auto 50px;
+  margin: 0 auto 70px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .landing-text {
   flex: 1;
 }
 
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
 .heading {
   font-size: 36px;
   margin-bottom: 16px;
+  color: #111827;
+  line-height: 1.2;
 }
 
 .content {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
+  max-width: 520px;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  background-color: #4f46e5;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.cta-button:hover {
+  background-color: #4338ca;
 }
 
 .landing-image {
@@ -33,29 +65,101 @@
 .landing-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.features-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-heading {
+  font-size: 28px;
+  margin-bottom: 32px;
+  color: #111827;
 }
 
 .features-list {
-    height:auto;
-  max-width: 900px;
-  margin: 0 auto;
   list-style: none;
-  padding:12px;
-  background-color: rgb(139, 205, 184);
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .features-list li {
-  margin-bottom: 12px;
+  background: white;
+  padding: 18px 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.features-list strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.features-list span {
+  font-size: 14px;
+  color: #555;
   line-height: 1.5;
 }
 
 
 @media (max-width: 768px) {
+  .landing {
+    padding: 60px 16px;
+  }
+
   .landing-header {
     flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .cta-button {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .landing-image img {
+    max-width: 90%;
+  }
+
+  .features-heading {
+    font-size: 24px;
+  }
+
+  .features-list li {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .features-heading {
+    font-size: 22px;
+  }
+
+  .cta-button {
+    width: 40%;
     text-align: center;
   }
 }
