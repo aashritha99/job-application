@@ -57,16 +57,18 @@ Instead of building a generic form, I designed this as a **job-focused landing p
 ## 🖼 Screenshots
 
 ### Landing Page – Hero Section
-![Landing Page Hero]
+
 <img width="1672" height="658" alt="image" src="https://github.com/user-attachments/assets/807edaa8-0c36-48d8-9237-ab3c9d7511f2" />
 
 
 ### Lead Submission Form
-![CTA Form]<img width="1561" height="621" alt="image" src="https://github.com/user-attachments/assets/ca580086-c4e0-4e56-9b54-c22278b9b397" />
+
+<img width="1561" height="621" alt="image" src="https://github.com/user-attachments/assets/ca580086-c4e0-4e56-9b54-c22278b9b397" />
 
 
 ### MongoDB Stored Leads
-![MongoDB Leads]<img width="644" height="343" alt="image" src="https://github.com/user-attachments/assets/5c8829c1-ee2c-4c25-9ce1-50dbe5f3c65e" />
+
+<img width="644" height="343" alt="image" src="https://github.com/user-attachments/assets/5c8829c1-ee2c-4c25-9ce1-50dbe5f3c65e" />
 
 
 > These screenshots demonstrate that the application is fully functional from UI → API → Database.
